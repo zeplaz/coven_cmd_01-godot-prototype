@@ -9,6 +9,16 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "ResourceFormatLoader",
+"class": "HTerrainDataLoader",
+"language": "GDScript",
+"path": "res://addons/zylann.hterrain/hterrain_resource_loader.gd"
+}, {
+"base": "ResourceFormatSaver",
+"class": "HTerrainDataSaver",
+"language": "GDScript",
+"path": "res://addons/zylann.hterrain/hterrain_resource_saver.gd"
+}, {
 "base": "Reference",
 "class": "agnt_contact",
 "language": "GDScript",
@@ -20,6 +30,8 @@ _global_script_classes=[ {
 "path": "res://agentz/AI_stearing.gd"
 } ]
 _global_script_class_icons={
+"HTerrainDataLoader": "",
+"HTerrainDataSaver": "",
 "agnt_contact": "",
 "steering_output": ""
 }

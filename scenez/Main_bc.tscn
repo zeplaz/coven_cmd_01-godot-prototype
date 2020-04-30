@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://milieu/partical_material_grass_A.tres" type="Material" id=1]
 [ext_resource path="res://assetz/tri6.obj" type="ArrayMesh" id=2]
@@ -6,6 +6,9 @@
 [ext_resource path="res://meterialz/multi_flower_A.material" type="Material" id=4]
 [ext_resource path="res://flower_grass.gd" type="Script" id=5]
 [ext_resource path="res://scenez/camera_rig.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assetz/neil/lamp_01.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://assetz/neil/endesga-32-32x.png" type="Texture" id=8]
+[ext_resource path="res://tank_01.tscn" type="PackedScene" id=9]
 
 [sub_resource type="ArrayMesh" id=1]
 surfaces/0 = {
@@ -37,10 +40,15 @@ surfaces/0 = {
 "vertex_count": 12
 }
 
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.00392157, 0.0156863, 0.0156863, 1 )
+albedo_texture = ExtResource( 8 )
+
 [node name="main" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16.6023, 0 )
 
 [node name="Camera_rig" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 0.688544, -0.725194, 0, 0.725194, 0.688544, 5.8175, -3.81262, -11.7806 )
 
 [node name="Particles" type="Particles" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.8821, 12.3981, 19.3091 )
@@ -58,3 +66,18 @@ script = ExtResource( 5 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.168362, 11.8544, 0.895914 )
 mesh = ExtResource( 2 )
 material/0 = ExtResource( 4 )
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.62183, -11.1204, -6.21047 )
+light_energy = 1.63
+light_indirect_energy = 4.88
+light_specular = 0.8
+light_bake_mode = 2
+omni_range = 7.22954
+
+[node name="tank_01" parent="." instance=ExtResource( 9 )]
+
+[node name="lamp_01" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.10416, -16.8401, -6.7392 )
+mesh = ExtResource( 7 )
+material/0 = SubResource( 3 )
