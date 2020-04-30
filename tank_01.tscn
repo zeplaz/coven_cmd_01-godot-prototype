@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assetz/neil/tank_01.obj" type="ArrayMesh" id=1]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+[node name="tank_01" type="Spatial"]
+
+[node name="tank_01_mesh" type="MeshInstance" parent="."]
+transform = Transform( -95.2942, -4.65661e-08, 30.3152, -0.567161, 99.9825, -1.78284, -30.3098, -1.87088, -95.2776, 1.20918, -11.4563, -6.2471 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+material/1 = null

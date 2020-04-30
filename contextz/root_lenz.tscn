@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+[node name="root_lenz" type="Spatial"]
+
+[node name="Camera" type="Camera" parent="."]
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Container" type="Container" parent="Control"]
+anchor_right = 3.975
+anchor_bottom = 2.4
+margin_left = 94.0
+margin_top = 44.0
+margin_right = 321.0
+margin_bottom = 96.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ViewportContainer" type="ViewportContainer" parent="Control/Container"]
+material = SubResource( 1 )
+margin_right = 40.0
+margin_bottom = 40.0

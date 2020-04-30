@@ -1,0 +1,38 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "agnt_contact",
+"language": "GDScript",
+"path": "res://agentz/agent_decision_comp.gd"
+}, {
+"base": "Reference",
+"class": "steering_output",
+"language": "GDScript",
+"path": "res://agentz/AI_stearing.gd"
+} ]
+_global_script_class_icons={
+"agnt_contact": "",
+"steering_output": ""
+}
+
+[application]
+
+config/name="Cov Cmd 01"
+run/main_scene="res://scenez/Main_bc.tscn"
+
+[autoload]
+
+ResourceQueue="*res://3rd_party/resource_queue.gd"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

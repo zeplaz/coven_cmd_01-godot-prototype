@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/train_01.obj-b2263b9ac40c43045a32d3031a88b964.mesh"
+
+[deps]
+
+files=[ "res://.import/train_01.obj-b2263b9ac40c43045a32d3031a88b964.mesh" ]
+
+source_file="res://assetz/neil/train_01.obj"
+dest_files=[ "res://.import/train_01.obj-b2263b9ac40c43045a32d3031a88b964.mesh", "res://.import/train_01.obj-b2263b9ac40c43045a32d3031a88b964.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

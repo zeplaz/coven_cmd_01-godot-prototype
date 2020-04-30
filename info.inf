@@ -1,0 +1,38 @@
+
+
+logoin, strar.
+main.->
+
+viewport00
+menu list ->
+prefz..->
+login.. ->
+load..->
+
+login|
+{commiteMember, or user.}
+]password.//but, is an early piped in, comdline parm.
+retained. passsqward is flax passmat.
+
+-|->
+load|list_sym statez
+
+viewport01
+-> main_loop_screen,
+
+viewport02
+-> text_displayout_main_screen
+
+|->
+
+enum
+{
+newsaper,
+DOCUMENTZ,
+MEMOZ,
+PASSPORTZ
+};
+
+enum {
+
+}

@@ -1,0 +1,24 @@
+[gd_scene format=2]
+
+[node name="vehicle_root" type="Node"]
+
+[node name="trainz" type="Spatial" parent="."]
+
+[node name="Control" type="Control" parent="trainz"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Camera" type="Camera" parent="trainz"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.39132, 0.280746, 0.585314 )
+
+[node name="RigidBody" type="RigidBody" parent="trainz"]
+
+[node name="Spatial" type="Spatial" parent="."]
+
+[node name="Camera" type="Camera" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.71447, -0.429713, -0.545196 )
+
+[node name="VehicleBody" type="VehicleBody" parent="Spatial"]

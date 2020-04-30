@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://commitee_z/console_A.gd" type="Script" id=1]
+[ext_resource path="res://commitee_z/command_handler.gd" type="Script" id=2]
+
+
+
+[node name="console_A" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="command_handler_A" type="Node" parent="."]
+script = ExtResource( 2 )
+
+[node name="output_A" type="TextEdit" parent="."]
+margin_left = 62.0
+margin_top = 158.0
+margin_right = 382.0
+margin_bottom = 332.0
+focus_mode = 0
+custom_colors/font_color_readonly = Color( 0.14902, 0.87451, 0.152941, 1 )
+text = "First::consuz::_
+"
+readonly = true
+highlight_current_line = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="input_cmd_line" type="LineEdit" parent="."]
+margin_left = 66.0
+margin_top = 344.0
+margin_right = 385.0
+margin_bottom = 368.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="text_entered" from="input_cmd_line" to="." method="_on_input_cmd_line_text_entered"]

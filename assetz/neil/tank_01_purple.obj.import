@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tank_01_purple.obj-9ade83047313252a92f250ad3ff4b3be.mesh"
+
+[deps]
+
+files=[ "res://.import/tank_01_purple.obj-9ade83047313252a92f250ad3ff4b3be.mesh" ]
+
+source_file="res://assetz/neil/tank_01_purple.obj"
+dest_files=[ "res://.import/tank_01_purple.obj-9ade83047313252a92f250ad3ff4b3be.mesh", "res://.import/tank_01_purple.obj-9ade83047313252a92f250ad3ff4b3be.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

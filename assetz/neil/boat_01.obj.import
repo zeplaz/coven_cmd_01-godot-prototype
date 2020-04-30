@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/boat_01.obj-685cb7686a8b3623d3acefc4856e1ecd.mesh"
+
+[deps]
+
+files=[ "res://.import/boat_01.obj-685cb7686a8b3623d3acefc4856e1ecd.mesh" ]
+
+source_file="res://assetz/neil/boat_01.obj"
+dest_files=[ "res://.import/boat_01.obj-685cb7686a8b3623d3acefc4856e1ecd.mesh", "res://.import/boat_01.obj-685cb7686a8b3623d3acefc4856e1ecd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

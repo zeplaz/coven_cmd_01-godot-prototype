@@ -1,0 +1,9 @@
+[gd_scene format=2]
+
+[node name="lib_exam_mesh" type="Spatial"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+
+[node name="StaticBody" type="StaticBody" parent="MeshInstance"]
+
+[node name="CollisionShape" type="CollisionShape" parent="MeshInstance/StaticBody"]
